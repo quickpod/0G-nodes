@@ -5,9 +5,9 @@
 3.  Find any machine with at least 500GB of storage, 32GB RAM, and 8 threads. Machines with more threads will have better performance, especially during initial compilation.
 4.  Click "Create Pod", then use the **Ubuntu 22.04 VM** template. Make sure to set the storage between 500GB and 1TB.
   <img width="1406" height="1044" alt="image" src="https://github.com/user-attachments/assets/c9cc37b2-625e-44f0-a4e0-ce9371132159" />
-5.  Navigate to the [Pods page](https://console.quickpod.io/pods). The pod will take up to 5 minutes to intialize. Once the Connect button becomes enabled, click it.
+5.  Navigate to the [Pods page](https://console.quickpod.io/pods) . The pod will take up to 5 minutes to intialize. Once the Connect button becomes enabled, click it.
 6. Find the port forwarded to 5900, then click the link to open the VNC terminal. Once the terminal loads, click "Connect" to open the session.
-   <img width="1396" height="442" alt="image" src="https://github.com/user-attachments/assets/50763550-16af-49df-bbc1-6f0adf1699b7" />
+   <img width="1391" height="451" alt="image" src="https://github.com/user-attachments/assets/382f8133-c03f-49ca-97a3-3870e896353a" />
 7. The server may perform some setup tasks. Wait until you are prompted for a username and password.
    > The default username and password is "quickpod"/"abcd1234". If desired, these credentials may be changed by editing the template before creating the pod. 
 
@@ -42,6 +42,7 @@
 ## 4. Running your node
 > [!IMPORTANT]
 > Remember to replace your private key before running or the node will fail to start. If your toml file has a different name, also replace it.
+
 Your node can be started by typing `cd $HOME/0g-storage-node/run && ../target/release/zgs_node --config config.toml --miner-key <your_private_key>`.
 
 Your node should now connect and receive participation rewards. 
